@@ -1,0 +1,183 @@
+
+name: pronet_storeroom_v_01
+description: Provodov net Storeroom.
+version: 0.1.0
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: 
+    sdk: flutter   
+  dio: ^5.3.2
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.1
+  get_it: ^7.6.4
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  http: ^1.1.0
+  bloc: ^8.0.0
+  flutter_bloc: ^8.0.0
+  equatable: ^2.0.5
+  json_annotation: ^4.9.0
+  path: ^1.8.3
+  intl: ^0.18.1
+  url_launcher: ^6.1.14
+  expandable: ^5.0.1
+  file_picker: ^5.5.0
+  dropdown_search: ^5.0.6
+  table_calendar: ^3.0.9
+  flutter_linkify: ^6.0.0
+  pasteboard: ^0.2.0
+  clipboard: ^0.1.2+5
+  html_editor_enhanced: ^2.5.0
+  flutter_html: ^3.0.0-beta
+  package_info_plus: ^4.2.0
+  percent_indicator: 4.0.1
+  flutter_svg: ^2.0.5
+
+  cupertino_icons: ^1.0.2
+  go_router: ^14.2.3
+  material_symbols_icons: ^4.2784.0
+  go_router_builder: ^2.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.2
+  auto_route_generator: ^7.3.2
+  json_serializable: ^6.8.0
+  flutter_launcher_icons: "^0.13.1"
+  build_runner: ^2.4.9
+  flutter_lints: ^2.0.0
+  build_verify: ^3.1.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "images/icon9.png"
+  web:
+    generate: true
+    image_path: "images/icon9.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "images/icon9.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "images/icon9.png"
+
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom asset to your application, add a asset section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "asset" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # asset:
+  #   - family: SFProDisplay
+  #     asset:
+  #       - asset: fonts/SFProDisplay-Thin.ttf
+  #         style: normal 
+  #         weight: 200
+  #       - asset: fonts/SFProDisplay-Ultralight.ttf
+  #         style: normal
+  #         weight: 300
+  #       - asset: fonts/SFProDisplay-Light.ttf
+  #         style: normal
+  #         weight: 400
+  #       - asset: fonts/SFProDisplay-Regular.ttf
+  #         style: normal
+  #         weight: 500
+  #       - asset: fonts/SFProDisplay-Medium.ttf
+  #         style: normal
+  #         weight: 600
+  #       - asset: fonts/SFProDisplay-Semibold.ttf
+  #         style: normal
+  #         weight: 700
+  #       - asset: fonts/SFProDisplay-Bold.ttf
+  #         style: normal
+  #         weight: 800
+  #       - asset:  fonts/SFProDisplay-Black.ttf
+  #         style: normal
+  #         weight: 900
+  #       - asset: fonts/SFProDisplay-RegularItalic.ttf
+  #         style: italic
+
+  
+  # asset:
+  #   - family: SFProDisplay
+  #     asset:
+  #       - asset: fonts/SFProDisplay-Thin.ttf
+  #         style: normal 
+  #         weight: 200
+  #       - asset: fonts/SFProDisplay-Ultralight.ttf
+  #         style: normal
+  #         weight: 300
+  #       - asset: fonts/SFProDisplay-Light.ttf
+  #         style: normal
+  #         weight: 400
+  #       - asset: fonts/SFProDisplay-Regular.ttf
+  #         style: normal
+  #         weight: 500
+  #       - asset: fonts/SFProDisplay-Medium.ttf
+  #         style: normal
+  #         weight: 600
+  #       - asset: fonts/SFProDisplay-Semibold.ttf
+  #         style: normal
+  #         weight: 700
+  #       - asset: fonts/SFProDisplay-Bold.ttf
+  #         style: normal
+  #         weight: 800
+  #       - asset:  fonts/SFProDisplay-Black.ttf
+  #         style: normal
+  #         weight: 900
+  #       - asset: fonts/SFProDisplay-RegularItalic.ttf
+  #         style: italic
+
+asset:
+    - family: SFProDisplay
+      asset:
+        - asset: fonts/SFProDisplay-Thin.ttf
+          style: normal 
+          weight: 200
+        - asset: fonts/SFProDisplay-Ultralight.ttf
+          style: normal
+          weight: 300
+        - asset: fonts/SFProDisplay-Light.ttf
+          style: normal
+          weight: 400
+        - asset: fonts/SFProDisplay-Regular.ttf
+          style: normal
+          weight: 500
+        - asset: fonts/SFProDisplay-Medium.ttf
+          style: normal
+          weight: 600
+        - asset: fonts/SFProDisplay-Semibold.ttf
+          style: normal
+          weight: 700
+        - asset: fonts/SFProDisplay-Bold.ttf
+          style: normal
+          weight: 800
+        - asset:  fonts/SFProDisplay-Black.ttf
+          style: normal
+          weight: 900
+        - asset: fonts/SFProDisplay-RegularItalic.ttf
+          style: italic
+  
+  # For details regarding asset from package dependencies,
+  # see https://flutter.dev/custom-asset/#from-packages

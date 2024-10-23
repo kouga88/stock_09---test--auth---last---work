@@ -1,0 +1,90 @@
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/add_task_attachment_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/add_task_children_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/add_task_journal_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/add_task_member_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/add_task_relation_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/create_organization_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/create_task_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/create_dept_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/create_user_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/edit_organization_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/edit_user_ok%20.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_custom_fields.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_custom_fields_short.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_groups.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_departments.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_organization.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_organization_short.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_priorities_short.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_projects.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_projects_short.dart';
+
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_statuses_short.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_tasks_mini.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_tasks_one.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_tasks.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_trackers.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_trackers_short.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_user.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_user_short.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/get_works.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/sign_out_error.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/sign_out_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/me_error.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/me_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/new_task_attachment.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/new_task_children.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/new_task_journal_comment.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/remove_task_attachments_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/remove_task_members_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/sign_in_error.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/sign_in_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/update_custom_value_ok.dart';
+import 'package:pronet_storeroom_v_01/servises/api_mocker/json/update_task_assined_ok.dart';
+
+Map<String, String> jsonMap = {
+  'sign_in_ok': signInOk,
+  'sign_in_error': signInError,
+  'log_out': logOutOk,
+  'log_out_error': logOutError,
+  'me_ok': meOk,
+  'me_error': meError,
+  'create_dept_ok': createDeptOk,
+  'create_user_ok': createUserOk,
+  'edit_user_ok': editUserOk,
+  'get_projects': getProjects,
+  'get_projects_short': getProjectsShort,
+  'get_trackers': getTrackers,
+  'get_trackers_short': getTrackersShort,
+  'get_organization': getOrganization,
+  'get_organization_short': getOrganizationShort,
+  'create_organization_ok': createOrganizatonOk, //editOrganizatonOk
+  'edit_organization_ok': editOrganizationOk, //editOrganizatonOk
+  'get_works': getWorks,
+
+  'get_statuses_short': getStatusesShort,
+  'get_priorities': getDepartments,
+  'get_priorities_short': getPrioritiesShort,
+  'get_custom_fields': getCustomFields,
+  'get_custom_fields_short': getCustomFieldsShort,
+  'get_tasks': getTasks,
+  // 'get_tasks_short': getTasksShort,
+  'get_tasks_one': getTasksOne,
+  'get_groups': getGroups,
+  'create_task_ok': createTaskOk,
+  'add_task_attachment_ok': addTaskAttachmentOk,
+  'remove_task_members_ok': removeTaskMembersOk,
+  'remove_task_attachments_ok': removeTaskAttachmentsOk,
+  'update_task_assigned_ok': updateTaskAssignedOk,
+  'get_user': getUser,
+  'get_user_short': getUserShort,
+  'add_task_memeber_ok': addTaskMemberOk,
+  'get_tasks_mini': getTasksMini,
+  'add_task_relation_ok': addTaskRelationOk,
+  'update_custom_value_ok': updateCustomValueOk,
+  'add_task_journal_ok': addTaskJournalOk,
+  'new_task_journal_comment': newTaskJournalComment,
+  'add_task_children_ok': addTaskChildrenOk,
+  'new_task_children': newTaskChildren,
+  'new_task_attachment': newTaskAttachment,
+};
